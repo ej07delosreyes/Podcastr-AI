@@ -1,6 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values"
-
+    //Create schema for Convex
 export default defineSchema({
     podcasts: defineTable({
         audioStorageId: v.optional(v.id('_storage')),
@@ -13,8 +13,8 @@ export default defineSchema({
         author: v.string(),
         authorId: v.string(),
         authorImageUrl: v.string(),
-        voicePromt: v.string(),
-        imagePromp: v.string(),
+        voicePrompt: v.string(),
+        imagePrompt: v.string(),
         voiceType: v.string(),
         audioDuration: v.number(),
         view: v.number(),
